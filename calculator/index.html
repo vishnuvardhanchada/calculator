@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>CALCULATOR</h1>
+        <div class="inputfield">
+            <input type="text" id="input"  readonly>
+            <br>
+            <input type="text" id="output"  read only>
+        </div>
+        <div class="buttonarea">
+            <div class="numbers">
+                <input type="button" value="9" onclick="appendToInput('9')" class="button">
+                <input type="button" value="8" onclick="appendToInput('8')" class="button">
+                <input type="button" value="7" onclick="appendToInput('7')" class="button">
+                <input type="button" value="6" onclick="appendToInput('6')" class="button">
+                <input type="button" value="5" onclick="appendToInput('5')" class="button">
+                <input type="button" value="4" onclick="appendToInput('4')" class="button">
+                <input type="button" value="3" onclick="appendToInput('3')" class="button">
+                <input type="button" value="2" onclick="appendToInput('2')" class="button">
+                <input type="button" value="1" onclick="appendToInput('1')" class="button">
+                <input type="button" value="." onclick="appendToInput('.')" class="button">
+                <input type="button" value="0" onclick="appendToInput('0')" class="button">
+                <input type="button" value="=" onclick="calculate()" class="button">
+            </div>
+            <div class="operators">
+                <input type="button" value="+" onclick="appendToInput('+')" class="button">
+                <input type="button" value="-" onclick="appendToInput('-')" class="button">
+                <input type="button" value="*" onclick="appendToInput('*')" class="button">
+                <input type="button" value="/" onclick="appendToInput('/')" class="button">
+            </div>
+            <div class="clear">
+                <input type="button" value="C" onclick="clearInput()" class="button">
+                <input type="button" value="BSP" onclick="backspace()" class="button">
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </div>
+    
+</body>
+</html>
